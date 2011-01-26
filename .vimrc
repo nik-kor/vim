@@ -14,7 +14,6 @@ set wrap "перенос длинных строк
 set cin "отступы в стиле C
 set ai "при наличии новой строки отступ копируется с предыдующей
 
-syntax on
 
 "-----------Misc------------
 filetype plugin on "Включаем filetype плагины.
@@ -30,12 +29,25 @@ set ignorecase "case insensitive search
 "set smartcase "If you have a string with at least one uppercase character, however, the search becomes
               "case sensitive.
 
+nmap <silent> <S-k> :wincmd k<CR>
+nmap <silent> <S-j> :wincmd j<CR>
+nmap <silent> <S-h> :wincmd h<CR>
+nmap <silent> <S-l> :wincmd l<CR>
+:map <F6> <C-W>w
+
+nmap <F9> zfa}
+nmap <F8> zO
+
 
 "-----------Tabs-----------------
 :nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
 :map <C-z> :tabprevious<CR>
 :map <C-x> :tabnext<CR>
+
+"html tags mapping
+map tbr i<br /><Esc>l
+map ttbl i<table><tr><td></td></tr></table><Esc>l
 
 "-----------Backups------------
 set backup " включить сохранение резервных копий
@@ -135,5 +147,10 @@ if has("autocmd")
 endif
 
 " some options on open/close file
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+" au BufWinLeave * mkview
+" au BufWinEnter * silent loadview
+
+ab helllo hello
+
+nmap <C-p> :1po<CR>
+nmap <C-n> :1ta<CR>
