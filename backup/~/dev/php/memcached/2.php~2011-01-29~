@@ -1,0 +1,25 @@
+#!/usr/bin/php
+<?php
+$memcachedObj = new Memcache;
+//$memcachedObj->connect('127.0.0.1', '11211');
+
+$memcachedObj->addServer('localhost', 11212);
+$memcachedObj->connect('localhost', 11212);
+class SomeObj
+{
+    private $value;
+    public function __construct($value) {
+        $this->value = $value;
+    }
+
+    private function getValue() {
+        return $this->value;
+    }
+}
+$someObj = new SomeObj(10);
+
+$memcachedObj->set('myObject', $someObj, false, 3600);
+$memcachedObj->close();
+
+
+var_dump($someObj);

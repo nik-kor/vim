@@ -1,0 +1,20 @@
+Some commands and tips:
+
+% - movement between curly brackets
+cw - change word
+
+Use tags!
+* - search word under cursor
+[[ - go to beginning of the funstion
+fx - go to the first 'x' in string
+
+!sort - in visual mode - sort strings. Also you could apply any other commands this way
+xp - change near standing letters with each other
+di{ - delete text inside curle brackets
+da{ - like previous, but with remove with brackets
+% - go to pair brackets
+
+
+" surround plugin
+yss<h1> - wrap text in <h1>
+dst - unrap text
