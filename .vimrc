@@ -45,11 +45,6 @@ nmap <F8> zO
 :map <C-z> :tabprevious<CR>
 :map <C-x> :tabnext<CR>
 
-" html tags mapping
-map tbr a<br /><Esc>l
-map ttbl a<table><tr><td></td></tr></table><Esc>l
-map tp a<p></p><Esc>
-
 "-----------Backups------------
 set backup " включить сохранение резервных копий
 " сохранять умные резервные копии ежедневно
@@ -151,7 +146,6 @@ endif
 " au BufWinLeave * mkview
 " au BufWinEnter * silent loadview
 
-ab helllo hello
 
 nmap <C-p> :1po<CR>
 nmap <C-n> :1ta<CR>
@@ -160,26 +154,14 @@ nmap <C-n> :1ta<CR>
 map <F4> :TlistToggle<CR>
 let Tlist_WinWidth = 50
 map <F5> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-map <C-Left_MouseClick> <Esc>C-]
+map <C-Left_MouseClick> C-]
 
 
 " color schema block
-    " a set of command to change colorscheme depends on a time of day
-    "let dayBegin = 10
-    "let dayScheme = "pyte"
-    "let nightBegin = 19
-    "let nightScheme = "dante"
-    "let currentTime = str2nr(strftime("%H"))
 
-    "if currentTime < nightBegin && currentTime < dayBegin
-        "silent execute "colorscheme " . nightScheme
-    "elseif currentTime > nightBegin && currentTime > dayBegin
-        "silent execute "colorscheme " . nightScheme
-    "else
-        "silent execute "colorscheme " . dayScheme
-    "endif
-    "
 colorscheme dante
 map <F2> :COLOR<CR>
 
 " color schema block
+
+set mouse=a
