@@ -1,8 +1,9 @@
 "-----------Encoding------------
+" set termencoding=utf-8
 set termencoding=utf-8
-set fileencodings=utf8,cp1251
+set fileencodings=utf-8,cp1251
 "WARNING 09.10.2009[morning] change encoding from cp1251 to utf-8. a little scared
-set encoding=utf-8 "кодировка, в которой вим хранит все данные, т.е. текст буфферов, строки
+set encoding=cp1251 "кодировка, в которой вим хранит все данные, т.е. текст буфферов, строки
                     "в выражениях, содержимое регистров и т.д.
 
 "-----------Editing------------
@@ -164,4 +165,15 @@ map <F2> :COLOR<CR>
 
 " color schema block
 
-set mouse=a
+" set mouse=a
+"
+
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+" remove trailing spaces after save
+autocmd BufWritePre *.php,*.js,*.css,*.cpp,*.c,*.txt :call <SID>StripTrailingWhitespaces()
