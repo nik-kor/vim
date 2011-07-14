@@ -78,9 +78,9 @@ let g:pdv_cfg_CommentSingle = "//"
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
 let g:pdv_cfg_Version = "$id$"
-let g:pdv_cfg_Author = "Nick E. Core"
-let g:pdv_cfg_Copyright = "AFTDesign"
-let g:pdv_cfg_License = "PHP Version 5.0"
+let g:pdv_cfg_Author = "Nikita Korotkih <nikita.korotkih@gmail.com>"
+let g:pdv_cfg_Copyright = "2011 GDEETOTDOM.ru"
+let g:pdv_cfg_License = ""
 
 let g:pdv_cfg_ReturnVal = "void"
 

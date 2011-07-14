@@ -207,8 +207,7 @@ snippet foreach
 		${3:// code...}
 	}
 snippet fun
-	${1:public }function ${2:FunctionName}(${3})
-	{
+	${1:public }function ${2:FunctionName}(${3}) {
 		${4:// code...}
 	}
 # $... = array (...)
@@ -217,3 +216,5 @@ snippet array
 
 snippet pa
 	echo '<pre>'; print_r($${1:arrayName}); echo '</pre>';
+snippet var_dump
+	echo '<pre>'; var_dump($${1:variableName}); echo '</pre>';
