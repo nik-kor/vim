@@ -3,4 +3,4 @@ function! s:doSomething()
 endfunction
 
 command DoSomething :call <SID>doSomething()
-nmap k :DoSomething<CR>
+"nmap k :DoSomething<CR>
