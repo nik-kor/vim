@@ -25,7 +25,7 @@ Bundle 'vim-scripts/mru.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/ScrollColors'
-Bundle 'snipMate'
+Bundle 'msanders/snipmate.vim'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/taglist.vim'
@@ -120,3 +120,9 @@ noremap <C-h> <C-w>h
 
 
 autocmd BufEnter * :syntax sync fromstart
+
+let g:syntastic_php_checkers = []
+
+
+" https://github.com/paulmillr/chokidar/issues/35#issuecomment-18881511
+:set backupcopy=yes
