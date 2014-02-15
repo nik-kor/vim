@@ -25,13 +25,15 @@ Bundle 'vim-scripts/mru.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/ScrollColors'
-Bundle 'msanders/snipmate.vim'
+" Bundle 'msanders/snipmate.vim'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'stephpy/vim-phpdoc'
 Bundle 'taxilian/VimDebugger'
 Bundle 'vim-scripts/Colour-Sampler-Pack'
+Bundle 'rking/ag.vim'
+
 
 filetype plugin indent on     " required!
 
