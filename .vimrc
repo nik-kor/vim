@@ -4,6 +4,9 @@ filetype off                  " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+set autoindent
+set smartindent
+
 Bundle 'gmarik/vundle'
 
 " TODO sort it!
@@ -33,7 +36,9 @@ Bundle 'stephpy/vim-phpdoc'
 Bundle 'taxilian/VimDebugger'
 Bundle 'vim-scripts/Colour-Sampler-Pack'
 Bundle 'rking/ag.vim'
-
+Bundle 'SirVer/ultisnips'
+Bundle 'tobyS/vmustache'
+Bundle 'tobyS/pdv'
 
 filetype plugin indent on     " required!
 
@@ -128,3 +133,6 @@ let g:syntastic_php_checkers = []
 
 " https://github.com/paulmillr/chokidar/issues/35#issuecomment-18881511
 :set backupcopy=yes
+
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
