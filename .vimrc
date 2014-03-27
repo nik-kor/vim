@@ -82,9 +82,7 @@ nmap <C-n> :1ta<CR>
 " TagList
 map <F4> :TlistToggle<CR>
 let Tlist_WinWidth = 50
-map <C-S-F5> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <C-Left_MouseClick> C-]
-
 
 
 fun! <SID>StripTrailingWhitespaces()
@@ -95,7 +93,7 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 " remove trailing spaces after save
-autocmd BufWritePre *.php,*.js,*.css,*.cpp,*.c,*.txt,*.html,*.json,*.coffee,*.thrift,*.md,*.py,*.feature :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.php,*.js,*.css,*.cpp,*.c,*.txt,*.html,*.json,*.coffee,*.thrift,*.md,*.py,*.feature,*.tex :call <SID>StripTrailingWhitespaces()
 
 
 au BufRead,BufNewFile *.thrift set filetype=thrift
