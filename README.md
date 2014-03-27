@@ -4,9 +4,17 @@
 - {VIM}:BundleInstall
 - sudo apt-get install ctags
 
-## TODO
+## Ctags generation examples
 
-* define what to do with ctags and searching
+### JavaScript
+
+`ctags -R --languages=+JavaScript --JavaScript-kinds=+fcmpv --fields=+iaS --extra=+q .`
+
+### PHP
+
+`ctags -R --languages=+PHP -exclude=www .`
+
+## TODO
 
 * put vundle in git submodule
 * check if you need scripts in syntax directory
