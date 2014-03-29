@@ -1,9 +1,9 @@
 all: vundle vimrc ctags
 
-vimrc: 
+vimrc: .vimrc 
 	ln -fs $(CURDIR)/.vimrc ~/.vimrc
 
-ctags:
+ctags: .ctags
 	ln -fs $(CURDIR)/.ctags ~/.ctags
 
 bundle:
