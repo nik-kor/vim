@@ -1,4 +1,15 @@
-all:
-	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-	ln -s ~/.vim/.vimrc ~/.vimrc
-	ln -s ~/.vim/.ctags ~/.ctags
+all: vundle vimrc ctags
+
+vimrc: 
+	ln -fs $(CURDIR)/.vimrc ~/.vimrc
+
+ctags:
+	ln -fs $(CURDIR)/.ctags ~/.ctags
+
+bundle:
+	mkdir bundle
+
+vundle: bundle
+	cd $?
+	@echo [ -d $@ ] || git clone https://github.com/gmarik/vundle.git
+	@cd $?/$@ && git pull
