@@ -1,8 +1,6 @@
 ## Install
 
-- make
-- {VIM}:BundleInstall
-- sudo apt-get install ctags
+`make`
 
 ## Ctags generation examples
 

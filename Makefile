@@ -1,4 +1,6 @@
 all: vundle vimrc ctags
+	vim +BundleInstall +qall!
+	sudo apt-get install -y ctags
 
 vimrc: .vimrc 
 	ln -fs $(CURDIR)/.vimrc ~/.vimrc
