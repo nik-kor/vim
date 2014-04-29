@@ -39,6 +39,8 @@ Bundle 'rking/ag.vim'
 Bundle 'SirVer/ultisnips'
 Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
+Bundle 'benmills/vimux'
+
 
 filetype plugin indent on     " required!
 
