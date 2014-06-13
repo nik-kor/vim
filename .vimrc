@@ -40,7 +40,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'benmills/vimux'
-
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on     " required!
 
