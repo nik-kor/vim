@@ -1,5 +1,5 @@
 all: vundle vimrc ctags
-	vim +BundleInstall +qall!
+	vim +PluginInstall +qall!
 	sudo apt-get install -y ctags
 
 vimrc: .vimrc 

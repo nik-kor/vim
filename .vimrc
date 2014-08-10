@@ -27,6 +27,7 @@ Bundle 'maksimr/vim-jsbeautify'
 Bundle 'vim-scripts/mru.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/ScrollColors'
 " Bundle 'msanders/snipmate.vim'
 Bundle 'ervandew/supertab'
@@ -41,6 +42,7 @@ Bundle 'tobyS/vmustache'
 Bundle 'tobyS/pdv'
 Bundle 'benmills/vimux'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on     " required!
 
