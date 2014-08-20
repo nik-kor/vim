@@ -1,6 +1,7 @@
 all: vundle vimrc ctags
 	vim +PluginInstall +qall!
 	sudo apt-get install -y ctags
+	sudo apt-get install silversearcher-ag
 
 vimrc: .vimrc 
 	ln -fs $(CURDIR)/.vimrc ~/.vimrc

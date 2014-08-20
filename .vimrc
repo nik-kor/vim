@@ -43,6 +43,7 @@ Bundle 'tobyS/pdv'
 Bundle 'benmills/vimux'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'kien/ctrlp.vim'
+Plugin 'evidens/vim-twig'
 
 filetype plugin indent on     " required!
 
