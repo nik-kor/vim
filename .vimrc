@@ -44,6 +44,7 @@ Plugin 'benmills/vimux'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'kien/ctrlp.vim'
 Plugin 'evidens/vim-twig'
+Plugin 'sjl/gundo.vim'
 
 filetype plugin indent on     " required!
 
@@ -139,3 +140,14 @@ let g:syntastic_php_checkers = []
 
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
+
+
+" persist (g)undo tree between sessions
+set undofile
+set history=100
+set undolevels=100
+
+" backup/persistence settings
+set undodir=~/.vim/tmp/undo//
+
+nnoremap <F5> :GundoToggle<CR>
