@@ -45,6 +45,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'kien/ctrlp.vim'
 Plugin 'evidens/vim-twig'
 Plugin 'sjl/gundo.vim'
+Plugin 'miyakogi/conoline.vim'
 
 filetype plugin indent on     " required!
 
@@ -151,3 +152,6 @@ set undolevels=100
 set undodir=~/.vim/tmp/undo//
 
 nnoremap <F5> :GundoToggle<CR>
+
+let g:conoline_auto_enable = 1
+let g:conoline_use_colorscheme_default_normal=1
