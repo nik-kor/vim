@@ -34,7 +34,6 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'stephpy/vim-phpdoc'
-Plugin 'taxilian/VimDebugger'
 Plugin 'vim-scripts/Colour-Sampler-Pack'
 Plugin 'rking/ag.vim'
 Plugin 'SirVer/ultisnips'
@@ -47,6 +46,7 @@ Plugin 'evidens/vim-twig'
 Plugin 'sjl/gundo.vim'
 Plugin 'miyakogi/conoline.vim'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " required!
 
@@ -164,3 +164,4 @@ let g:conoline_auto_enable = 1
 let g:conoline_use_colorscheme_default_normal=1
 
 au BufNewFile,BufRead *.ejs set filetype=javascript
+let g:tmux_navigator_save_on_switch = 1
