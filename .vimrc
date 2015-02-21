@@ -46,6 +46,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'evidens/vim-twig'
 Plugin 'sjl/gundo.vim'
 Plugin 'miyakogi/conoline.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 filetype plugin indent on     " required!
 
@@ -130,8 +131,14 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 
+nnoremap ; :
+nnoremap : ;
+nnoremap ! :!
+
+inoremap jk <Esc>
 
 autocmd BufEnter * :syntax sync fromstart
+autocmd InsertLeave * if expand('%') != '' | update | endif
 
 let g:syntastic_php_checkers = []
 
@@ -155,3 +162,5 @@ nnoremap <F5> :GundoToggle<CR>
 
 let g:conoline_auto_enable = 1
 let g:conoline_use_colorscheme_default_normal=1
+
+au BufNewFile,BufRead *.ejs set filetype=javascript
