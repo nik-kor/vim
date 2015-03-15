@@ -1,4 +1,4 @@
-source plugins
+source ~/.vim/plugins
 set autoindent
 set smartindent
 
