@@ -1,0 +1,40 @@
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Plugin 'gmarik/vundle'
+
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'groenewege/vim-less'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'vim-scripts/mru.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-vinegar'
+Plugin 'vim-scripts/ScrollColors'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/Colour-Sampler-Pack'
+Plugin 'rking/ag.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'miyakogi/conoline.vim'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'L9'
+" Plugin 'FuzzyFinder'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'nvie/vim-flake8'
+" Plugin 'matze/vim-move'
+" Plugin 'goldfeld/vim-seek'
+" Plugin 'mhinz/vim-tmuxify'
+" Plugin 'corntrace/bufexplorer'
+" Plugin 'msanders/snipmate.vim'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'tobyS/vmustache'
+" Plugin 'benmills/vimux'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'ervandew/supertab'

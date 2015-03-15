@@ -1,5 +1,5 @@
-all: vundle vimrc ctags
-	vim +PluginInstall +qall!
+all: bundle vimrc ctags
+	vim  +PluginInstall +qall! -u ~/.vim/plugins
 	sudo apt-get install -y ctags
 	sudo apt-get install silversearcher-ag
 
@@ -11,8 +11,9 @@ ctags: .ctags
 
 bundle:
 	mkdir bundle
+	cd bundle && git clone https://github.com/gmarik/vundle.git
 
-vundle: bundle
-	cd $?
-	@echo [ -d $@ ] || git clone https://github.com/gmarik/vundle.git
-	@cd $?/$@ && git pull
+clean: 
+	rm -rf bundle
+
+.PHONY: clean ctags vimrc all vundle
