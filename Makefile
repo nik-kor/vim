@@ -2,6 +2,7 @@ all: bundle vimrc ctags
 	vim  +PluginInstall +qall! -u ~/.vim/plugins
 	sudo apt-get install -y ctags
 	sudo apt-get install silversearcher-ag
+	# brew install the_silver_searcher
 
 vimrc: .vimrc 
 	ln -fs $(CURDIR)/.vimrc ~/.vimrc

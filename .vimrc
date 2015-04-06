@@ -21,7 +21,7 @@ set cin
 set ai
 
 highlight ColorColumn ctermbg=7
-set cc=81
+set cc=121
 
 set number
 
@@ -51,6 +51,7 @@ au! Syntax thrift source ~/.vim/syntax/thrift.vim
 
 " json stuff
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.bemtree,*.bemhtml set ft=javascript
 
 syntax on
 
