@@ -44,7 +44,7 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 " remove trailing spaces after save
-autocmd BufWritePre *.php,*.js,*.css,*.cpp,*.c,*.txt,*.html,*.json,*.coffee,*.thrift,*.md,*.py,*.feature,*.tex :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.php,*.js,*.css,*.cpp,*.c,*.txt,*.html,*.json,*.coffee,*.thrift,*.md,*.py,*.feature,*.tex,*.bemtree,*.bemhtml,*.bemjson :call <SID>StripTrailingWhitespaces()
 
 au BufRead,BufNewFile *.thrift set filetype=thrift
 au! Syntax thrift source ~/.vim/syntax/thrift.vim
