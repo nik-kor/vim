@@ -2,3 +2,4 @@ backup/*
 *.swp
 *.swo
 bundle
+.netrwhist
