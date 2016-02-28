@@ -101,4 +101,6 @@ nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
 " let g:syntastic_disabled_filetypes=['ts']
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger

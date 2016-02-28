@@ -1,10 +1,12 @@
 all: bundle vimrc ctags
 	vim  +PluginInstall +qall! -u ~/.vim/plugins
-	sudo apt-get install -y ctags
-	sudo apt-get install silversearcher-ag
-	# brew install the_silver_searcher
+	brew install the_silver_searcher
+	brew install cmake
+	cd ~/.vim/bundle/YouCompleteMe && ./install.py --tern-completer
+	npm install -g jshint
+	npm install -g jscs
 
-vimrc: .vimrc 
+vimrc: .vimrc
 	ln -fs $(CURDIR)/.vimrc ~/.vimrc
 
 ctags: .ctags
@@ -14,7 +16,7 @@ bundle:
 	mkdir bundle
 	cd bundle && git clone https://github.com/gmarik/vundle.git
 
-clean: 
+clean:
 	rm -rf bundle
 
 .PHONY: clean ctags vimrc all vundle
