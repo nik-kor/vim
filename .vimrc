@@ -5,7 +5,7 @@ set smartindent
 filetype plugin indent on     " required!
 
 " color schema block
-colorscheme dante
+colorscheme base16-ocean
 map <F2> :COLOR<CR>
 
 " TODO sort it
