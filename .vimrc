@@ -8,14 +8,14 @@ filetype plugin indent on     " required!
 colorscheme dante
 map <F2> :COLOR<CR>
 
-" TODO sort it 
+" TODO sort it
 set termencoding=utf-8
 set fileencodings=utf-8
-set encoding=utf-8 
+set encoding=utf-8
 set shiftwidth=4
 set ts=4
 set smarttab
-set et 
+set et
 set wrap
 set cin
 set ai
@@ -44,13 +44,14 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 " remove trailing spaces after save
-autocmd BufWritePre *.php,*.js,*.css,*.cpp,*.c,*.txt,*.html,*.json,*.coffee,*.thrift,*.md,*.py,*.feature,*.tex,*.bemtree,*.bemhtml,*.bemjson :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 au BufRead,BufNewFile *.thrift set filetype=thrift
 au! Syntax thrift source ~/.vim/syntax/thrift.vim
 
 " json stuff
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.tsx set ft=typescript
 autocmd BufNewFile,BufRead *.bemtree,*.bemhtml set ft=javascript
 
 syntax on
@@ -98,3 +99,6 @@ nnoremap tl  :tablast<CR>
 nnoremap tt  :tabedit<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+" let g:syntastic_disabled_filetypes=['ts']
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
