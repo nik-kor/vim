@@ -107,3 +107,5 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 
 set laststatus=2
 set noshowmode
+
+let g:elm_format_autosave = 1
