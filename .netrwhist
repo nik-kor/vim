@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/nick/.vim'
-let g:netrw_dirhist_2='/Users/nikitakorotkih/dev/alfa/morgan/server.blocks'
-let g:netrw_dirhist_3='/Users/nikitakorotkih/dev/alfa/rur-pay-form/libs/bem-components/common.blocks/.bem'
-let g:netrw_dirhist_4='/Users/nikitakorotkih/dev/alfa/rur-pay-form/libs/bem-core/.bem'
-let g:netrw_dirhist_5='/Users/nikitakorotkih/dev/alfa/babel-play/node_modules/babel'
-let g:netrw_dirhist_6='/Users/nikitakorotkih/Dropbox/Public'
