@@ -1,22 +1,21 @@
-all: bundle vimrc ctags
-	vim  +PluginInstall +qall! -u ~/.vim/plugins
-	brew install the_silver_searcher
-	brew install cmake
-	cd ~/.vim/bundle/YouCompleteMe && ./install.py --tern-completer
-	npm install -g jshint
-	npm install -g jscs
+all: fzf python3 ack haskell-ide vim-plug
+    nvim +PlugInstall +UpdateRemotePlugins +qa
 
-vimrc: .vimrc
-	ln -fs $(CURDIR)/.vimrc ~/.vimrc
+vim-plug:
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-ctags: .ctags
-	ln -fs $(CURDIR)/.ctags ~/.ctags
+fzf:
+	brew install fzf
 
-bundle:
-	mkdir bundle
-	cd bundle && git clone https://github.com/gmarik/vundle.git
+python3:
+	brew install python
+	pip3 install neovim
 
-clean:
-	rm -rf bundle
+ack:
+	brew install ack
 
-.PHONY: clean ctags vimrc all vundle
+haskell-ide:
+	git clone https://github.com/haskell/haskell-ide-engine && cd haskell-ide-engine
+	stack --stack-yaml=stack-8.4.2.yaml install
+
+.PHONY: all vim-plug fzf python3 ack haskell-ide
