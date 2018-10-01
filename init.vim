@@ -22,8 +22,7 @@ set ai
 highlight ColorColumn ctermbg=7
 set cc=121
 
-set number
-
+set relativenumber
 ""-----------Searching------------
 set showmatch
 set hlsearch "highlight search results
@@ -81,7 +80,7 @@ map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
 map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
 map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
 map <Leader>lb :call LanguageClient#textDocument_references()<CR>
-map la :call LanguageClient#textDocument_codeAction()<CR>
+" map la :call LanguageClient#textDocument_codeAction()<CR>
 map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
