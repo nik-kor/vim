@@ -29,4 +29,8 @@ Plug 'elmcast/elm-vim'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'cespare/vim-toml'
+
 call plug#end()
